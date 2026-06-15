@@ -1,0 +1,214 @@
+﻿
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html, body {
+        height: 100%;
+        font-family: 'Segoe UI',sans-serif;
+    }
+
+    .selfie-container {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* Camera */
+
+    .camera-wrapper {
+        position: relative;
+        height: 65vh;
+        overflow: hidden;
+        background: #000;
+    }
+
+    #video,
+    #capturedImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    /* Oval Guide */
+
+    .face-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 250px;
+        height: 340px;
+        border: 4px dotted #2ec37e;
+        border-radius: 50%;
+        pointer-events: none;
+    }
+
+    /* Bottom */
+
+    .bottom-panel {
+        flex: 1;
+        background: radial-gradient(#e4ddff 1px, transparent 1px);
+        background-size: 14px 14px;
+        background-color: #f7f5ff;
+        padding: 20px;
+    }
+
+    .instruction-box {
+        background: #eee6ff;
+        color: #6d28d9;
+        padding: 14px;
+        border-radius: 10px;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .success-box {
+        margin-top: 15px;
+        background: #e7f8e7;
+        color: #198754;
+        padding: 14px;
+        border-radius: 10px;
+        text-align: center;
+        font-weight: 600;
+    }
+
+    .capture-section {
+        text-align: center;
+        margin-top: 35px;
+    }
+
+    .capture-text {
+        color: #888;
+        margin-bottom: 15px;
+    }
+
+    .capture-btn {
+        width: 70px;
+        height: 70px;
+        border: none;
+        border-radius: 50%;
+        background: linear-gradient(135deg,#512da8,#d81b60);
+        color: white;
+        font-size: 28px;
+        cursor: pointer;
+    }
+
+    .btn-retake,
+    .btn-submit {
+        width: 100%;
+        height: 50px;
+        margin-top: 15px;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 16px;
+    }
+
+    .btn-retake {
+        background: white;
+        border: 2px solid #673ab7;
+        color: #673ab7;
+    }
+
+    .btn-submit {
+        border: none;
+        background: #512da8;
+        color: white;
+    }
+
+    @@media (max-width: 480px) {
+        .face-overlay
+
+    {
+        width: 45%;
+        height: 100%;
+        max-width: 260px;
+        max-height: 340px;
+        border-width: 3px;
+    }
+
+    }
+
+    #video,
+    #capturedImage {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+</style>
+<div class="selfie-container">
+
+    <!-- Camera Area -->
+    <div class="camera-wrapper">
+
+        <video id="video" autoplay playsinline></video>
+
+        <img id="capturedImage" style="display:none;" />
+
+        <div class="face-overlay"></div>
+
+        <canvas id="canvas" style="display:none;"></canvas>
+
+    </div>
+
+    <!-- Bottom Panel -->
+    <div class="bottom-panel">
+
+        <div class="instruction-box">
+            <span class="info-icon">ⓘ</span>
+            Please make sure your face is well-lit and aligns inside the white circle.
+        </div>
+
+        <div class="success-box" id="capsus" style="display:none;">
+            ✓ Captured successfully!
+        </div>
+
+        <div class="success-box" id="upsus" style="display:none;">
+            ✓ Photo uploaded successfully!
+            <p> You can now continue with your Jio BP Fuel Card creation.</p>
+        </div>
+
+        <div class="capture-section">
+
+            <p class="capture-text" id="capturetxt">Click to capture</p>
+
+            <button id="btnCapture" style="border:white;">
+                <img src="../svg/CameraBtn.svg" alt="Capture"/>
+            </button>
+
+            <button id="btnRetake" class="btn-retake" style="display:none;">
+                ↻ Retake
+            </button>
+
+            <button id="btnSubmit" class="btn-submit" style="display:none;">
+                ✓ Submit
+            </button>
+
+        </div>
+
+    </div>
+
+    <div id="loader" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.5); z-index: 1000; text-align: center;">
+        <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+
+            <img src="~/images/comp 1_2.gif" style="height:100px;width:100px;" alt="Loading..." />
+            <span class="visually-hidden">Loading...</span>
+            @* <div class="spinner-border text-light" role="status">
+                         
+                        </div> *@
+            <p style="color: white; margin-top: 10px;">Please wait...</p>
+        </div>
+    </div>
+
+</div>
+
+
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script src="~/js/LiveSelfie.js"></script>
