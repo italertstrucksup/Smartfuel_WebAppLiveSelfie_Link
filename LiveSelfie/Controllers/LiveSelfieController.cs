@@ -88,7 +88,5 @@ namespace LiveSelfie.Controllers
         {
             return View();
         }
-
-        //hi
     }
 }

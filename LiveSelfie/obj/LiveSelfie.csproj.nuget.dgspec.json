@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Project\\SmartFuel_LiveSelfie\\Smartfuel_WebAppLiveSelfie_Link\\LiveSelfie\\LiveSelfie.csproj": {}
+    "D:\\Project\\LiveSefie\\LiveSelfie\\LiveSelfie\\LiveSelfie.csproj": {}
   },
   "projects": {
-    "D:\\Project\\SmartFuel_LiveSelfie\\Smartfuel_WebAppLiveSelfie_Link\\LiveSelfie\\LiveSelfie.csproj": {
+    "D:\\Project\\LiveSefie\\LiveSelfie\\LiveSelfie\\LiveSelfie.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Project\\SmartFuel_LiveSelfie\\Smartfuel_WebAppLiveSelfie_Link\\LiveSelfie\\LiveSelfie.csproj",
+        "projectUniqueName": "D:\\Project\\LiveSefie\\LiveSelfie\\LiveSelfie\\LiveSelfie.csproj",
         "projectName": "LiveSelfie",
-        "projectPath": "D:\\Project\\SmartFuel_LiveSelfie\\Smartfuel_WebAppLiveSelfie_Link\\LiveSelfie\\LiveSelfie.csproj",
+        "projectPath": "D:\\Project\\LiveSefie\\LiveSelfie\\LiveSelfie\\LiveSelfie.csproj",
         "packagesPath": "C:\\Users\\aksha\\.nuget\\packages\\",
-        "outputPath": "D:\\Project\\SmartFuel_LiveSelfie\\Smartfuel_WebAppLiveSelfie_Link\\LiveSelfie\\obj\\",
+        "outputPath": "D:\\Project\\LiveSefie\\LiveSelfie\\LiveSelfie\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
