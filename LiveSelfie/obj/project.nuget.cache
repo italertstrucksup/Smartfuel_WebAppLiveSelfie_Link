@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "G4xiUyHKlBc=",
+  "dgSpecHash": "IQtcBzcU6fk=",
   "success": true,
-  "projectFilePath": "D:\\Project\\LiveSefie\\LiveSelfie\\LiveSelfie\\LiveSelfie.csproj",
+  "projectFilePath": "D:\\Project\\SmartFuel_LiveSelfie\\Smartfuel_WebAppLiveSelfie_Link\\LiveSelfie\\LiveSelfie.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\aksha\\.nuget\\packages\\awssdk.core\\4.0.9\\awssdk.core.4.0.9.nupkg.sha512",
     "C:\\Users\\aksha\\.nuget\\packages\\awssdk.s3\\4.0.24.3\\awssdk.s3.4.0.24.3.nupkg.sha512",
