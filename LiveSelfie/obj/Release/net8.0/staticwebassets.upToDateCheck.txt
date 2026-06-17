@@ -2,6 +2,7 @@ wwwroot\css\LiveSelfie.css
 wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\Comp 1_2.gif
+wwwroot\images\favicon.svg
 wwwroot\js\LiveSelfie.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap-grid.css

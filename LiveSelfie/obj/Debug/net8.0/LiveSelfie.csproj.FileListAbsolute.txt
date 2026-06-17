@@ -145,7 +145,6 @@ D:\Project\SmartFuel_LiveSelfie\Smartfuel_WebAppLiveSelfie_Link\LiveSelfie\obj\D
 D:\Project\SmartFuel_LiveSelfie\Smartfuel_WebAppLiveSelfie_Link\LiveSelfie\obj\Debug\net8.0\staticwebassets.build.json.cache
 D:\Project\SmartFuel_LiveSelfie\Smartfuel_WebAppLiveSelfie_Link\LiveSelfie\obj\Debug\net8.0\staticwebassets.development.json
 D:\Project\SmartFuel_LiveSelfie\Smartfuel_WebAppLiveSelfie_Link\LiveSelfie\obj\Debug\net8.0\staticwebassets.build.endpoints.json
-D:\Project\SmartFuel_LiveSelfie\Smartfuel_WebAppLiveSelfie_Link\LiveSelfie\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\Project\SmartFuel_LiveSelfie\Smartfuel_WebAppLiveSelfie_Link\LiveSelfie\obj\Debug\net8.0\LiveSelfie.csproj.Up2Date
 D:\Project\SmartFuel_LiveSelfie\Smartfuel_WebAppLiveSelfie_Link\LiveSelfie\obj\Debug\net8.0\LiveSelfie.dll
 D:\Project\SmartFuel_LiveSelfie\Smartfuel_WebAppLiveSelfie_Link\LiveSelfie\obj\Debug\net8.0\refint\LiveSelfie.dll

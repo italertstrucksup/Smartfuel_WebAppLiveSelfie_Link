@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LiveSelfie")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62b1ede366f5a285a2d373f68f08728bb17f0155")]
 [assembly: System.Reflection.AssemblyProductAttribute("LiveSelfie")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LiveSelfie")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
